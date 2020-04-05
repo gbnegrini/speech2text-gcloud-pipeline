@@ -1,0 +1,14 @@
+{
+    "name": "docker_speech2text",
+    "version": "1.0.0",
+    "description": "Containerized Node.js server for speech processing.",
+    "author": "Guilherme Bauer Negrini <negrini.guilherme@gmail.com>",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.16.1",
+      "@google-cloud/speech": "3.6.0"
+    }
+  }
