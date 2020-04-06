@@ -1,0 +1,16 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: speech2text-deployment
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: speech2text
+    spec:
+      containers:
+        - name: speech2text
+          image: gbnegrini/speech2text-container:v1
+          ports:
+            - containerPort: 3000

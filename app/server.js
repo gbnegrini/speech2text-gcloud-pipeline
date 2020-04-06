@@ -4,7 +4,7 @@ const speech = require("@google-cloud/speech");
 const app = express();
 app.use(express.json());
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 async function transcribe(config, audio) {
   const client = new speech.SpeechClient();
@@ -23,7 +23,7 @@ async function transcribe(config, audio) {
 }
 
 app.post("/audio", (req, res) => {
-  res.sendStatus(200);
+  res.status(200).send('Received!');
   console.log('Transcribing...');
   transcribe(req.body.config, req.body.audio);
 });
