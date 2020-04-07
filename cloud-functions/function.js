@@ -7,7 +7,7 @@
  * @param {!Object} context Metadata for the event.
  */
 const axios = require("axios");
-const containerAddress = "http://35.196.200.49";
+const containerAddress = "http://SERVICES_EXTERNAL_IP";
 
 const formatUri = (event) => {
   return `gs://${event.bucket}/${event.name}`;
