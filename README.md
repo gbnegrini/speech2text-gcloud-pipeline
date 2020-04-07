@@ -64,7 +64,7 @@ kubectl get services
 
 ### Deploy function.js to Cloud Functions
 ```
-gcloud functions deploy triggerBucket --entry-point=triggerBucket --memory=128MB --runtime=nodejs8 --source=./cloud-functions/triggerBucker.js --timeout=5s --trigger-bucket=<BUCKET-NAME> --trigger-event=google.storage.object.finalize --trigger-resource=<BUCKET-NAME>
+gcloud functions deploy triggerBucket --entry-point=triggerBucket --memory=128MB --runtime=nodejs8 --source=./cloud-functions --timeout=5s --trigger-bucket=<BUCKET-NAME>
 ```
 
 ### Test it!
@@ -87,5 +87,15 @@ gcloud functions delete triggerBucket
 
 kubectl delete service speech2text-service
 
-gcloud container clusters delete <CLUSTER-NAME> --zone 
+gcloud container clusters delete <CLUSTER-NAME> --zone us-east1
 ```
+
+### :books: References
+- [Google Cloud documentation](https://cloud.google.com/docs)
+
+- [Deploy a Docker App To Google Container Engine with Kubernetes](https://scotch.io/tutorials/google-cloud-platform-i-deploy-a-docker-app-to-google-container-engine-with-kubernetes#toc-a-look-at-our-nodejs-app-)
+
+- [Running a Node.js Container in Kubernetes with Kubernetes Engine](https://codelabs.developers.google.com/codelabs/cloud-running-a-nodejs-container/index.html?index=..%2F..index#0)
+
+### :scroll: License
+[MIT](https://opensource.org/licenses/MIT)
