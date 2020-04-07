@@ -4,7 +4,7 @@ A personal use pipeline integrating Google Cloud services to transcribe audio fi
 
 ![Docker build](https://img.shields.io/docker/cloud/automated/gbnegrini/speech2text-container)
 ![Docker build](https://img.shields.io/docker/cloud/build/gbnegrini/speech2text-container)
-![License](https://img.shields.io/github/license/gbnegrini/speech2text-gcloud-pipeline)
+![LICENSE](https://img.shields.io/github/license/gbnegrini/speech2text-gcloud-pipeline)
 
 ## :rotating_light: Requirements
  - [Google Cloud](https://cloud.google.com) account *
