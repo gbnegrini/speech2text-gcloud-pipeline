@@ -3,6 +3,6 @@
     "version": "0.0.1",
     "dependencies": {
       "@google-cloud/storage": "^1.6.0",
-      "axios":"0.19.2"
+      "axios":"1.6.0"
     }
   }
